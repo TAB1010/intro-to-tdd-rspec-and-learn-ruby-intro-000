@@ -5,9 +5,10 @@ describe "current_age_for_birth_year method" do
     age_of_person = current_age_for_birth_year(1984)
 
     expect(age_of_person).to eq(19)
-    ```ruby
-    def current_age_for_birth_year(birth_year)
-    end
-    ```
   end
 end
+```ruby
+def current_age_for_birth_year(birth_year)
+  2003 - birth_year
+end
+```
